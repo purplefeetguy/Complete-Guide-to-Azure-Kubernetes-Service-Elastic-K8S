@@ -1,11 +1,5 @@
-resource "azure_resource_group" "azure_k8s" {
-  name     = local.common_name
-  location = var.location
-  tags     = var.tag
-}
-
 resource "azure_log_analytics_workspace" "azure_law" {
-  name                = "pfg-workspace"
+  name                = "${local.common_name}"-law
   resource_group_name = azure_resource_group.azure_k8s.name
   sku                 = "Free"
   retention_in_days   = 7
