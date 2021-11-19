@@ -7,7 +7,7 @@ variable "acr" {
 }
 
 variable "location" {
-  default = "westus"
+  default = "eastus"
 }
 
 variable "address_space" {
@@ -15,7 +15,8 @@ variable "address_space" {
 }
 
 variable "agent_pool" {
-  default = ["defaultpool", "Standard_D2s_v3"]
+  #default = ["defaultpool", "Standard_D2s_v3"]
+  default = ["defaultpool", "Standard_B2s"]
 }
 
 variable "tags" {
