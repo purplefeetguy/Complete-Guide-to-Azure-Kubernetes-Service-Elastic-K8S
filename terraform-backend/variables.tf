@@ -1,6 +1,14 @@
+variable "subscription_id" {
+  type = string
+}
+
+variable "tenant_id" {
+  type = string
+}
+
 variable "region" {
   type    = string
-  default = "westus"
+  default = "West US 2"
 }
 
 variable "resource_group" {

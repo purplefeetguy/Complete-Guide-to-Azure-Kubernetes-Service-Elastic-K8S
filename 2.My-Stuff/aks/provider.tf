@@ -5,8 +5,12 @@ terraform {
       #version = "2.85.0"
     }
   }
+  
 }
 
 provider "azurerm" {
-  # Configuration options
+  subscription_id = var.subscription_id
+  # client_id       = "..."
+  # client_secret   = "..."
+  tenant_id       = var.tenant_id
 }

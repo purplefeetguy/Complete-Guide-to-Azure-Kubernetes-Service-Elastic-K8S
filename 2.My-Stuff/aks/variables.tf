@@ -2,12 +2,20 @@ locals {
   common_name = "pfgk8s"
 }
 
+variable "subscription_id" {
+  type = string
+}
+
+variable "tenant_id" {
+  type = string
+}
+
 variable "acr" {
   default = "aksCRegistry"
 }
 
 variable "location" {
-  default = "eastus"
+  default = "West US 2"
 }
 
 variable "address_space" {

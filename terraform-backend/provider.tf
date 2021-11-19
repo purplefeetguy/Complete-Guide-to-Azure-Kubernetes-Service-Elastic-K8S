@@ -15,8 +15,8 @@ provider "azurerm" {
   # the AzureRM Provider can be found here:
   # https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs
 
-  subscription_id = "var.subscription_id"
+  subscription_id = var.subscription_id
   # client_id       = "..."
   # client_secret   = "..."
-  tenant_id       = "var.tenant_id"
+  tenant_id       = var.tenant_id
 }
